@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="shortcut icon" href="resources/logos/mini.png" />
+    <link rel="shortcut icon" href="resources/logos/logo1.jpg" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Productos</title>
     <link rel="stylesheet" href="styles.css">
     <header>
-        
+
         <div class="inicio">
             <div class="logo-inicio">
-                <img src="resources/logos/Logo2.jpg" class="logo-inicio" alt="Logo"/>
+                <img src="resources/logos/logo1.jpg" class="logo-inicio" alt="Logo"/>
             </div>
             <div class="menu-inicio">
                 <ul class="lista-inicio">
-                    
+                    <li class="opciones-lista-inicio">  <a href="buscar.html" id="buscarLink" class="aa">Buscar</a></li>
+                    <li class="opciones-lista-inicio">  <a href="instrucciones.html" id="registroLink" class="aa">Instrucciones</a></li>
                     <li class="opciones-lista-inicio"><a href="index.html" id="indexLink" class="aa">Inicio</a></li>
-                    <li class="opciones-lista-inicio"><a href="#" id="infoLink" class="aa">Sobre Nosotros</a></li>
+                    <li class="opciones-lista-inicio"><a href="info.html" id="infoLink" class="aa">Sobre Nosotros</a></li>
                   
                 </ul>
               
@@ -27,43 +28,16 @@
    
 </head>
 <body>
-    
+    <button class="accordion">Carrito de compras</button>
 <div class="panel">
-    <h1>Catálogo de Productos</h1>
-    
-        <div class="select-container">
-            <select id="miSelect">
-                <option value="" disabled selected>Selecciona una opcion para filtrar</option>
-                <option value="opcion1">Mostrar todos los productos</option>
-                <option value="opcion2">Instrumentos</option>
-                <option value="opcion3">Amplificadores</option>
-                <option value="opcion4">Accesorios</option>
-                <option value="opcion5">Equipo de sonido</option>
-                <option value="opcion6">Software</option>
-                <option value="opcion7">Micrófonos</option>
-                <option value="opcion8">Material de teoría</option>
-                <option value="opcion9">Repuestos</option>
-            </select>
-            <button id="ejecutarOpcion">Filtrar</button>
-
-       
-        <br><br><br>
-      
+    <div id="carrito-container">
+        <h2>Carrito de Compras</h2>
+        <div id="carrito-lista" class="carrito-lista"></div>
+        <p id="carrito-total">Total: $0</p>
+        <button id="comprar-button">Comprar</button>
+        <div id="aviso-compra"></div>
     </div>
-      <table id="tabla-productos">
-        <thead>
-          <tr>
-            <th class="titulo-table">Nombre</th>
-            <th class="titulo-table">Precio</th>
-            <th class="titulo-table">Imagen</th>
-            <th class="titulo-table">Descripción</th>
-            <th class="titulo-table"><img src="resources/iconos/carrin.png" alt=""></th> 
-        </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
       <br><br><br><br><br><br><br><br>
 </div>
     
@@ -73,50 +47,42 @@
     <section class="wp">
         <button id="whatsapp-button"><img src="resources/logos/wp-icon.png" alt="WhatsApp"></button>
     </section>
-    <div id="carrito-container">
-        <h2>Carrito de Compras</h2>
-        <div id="carrito-lista" class="carrito-lista"></div>
-        <p id="carrito-total">Total: $0</p>
-        <button id="comprar-button">Comprar</button>
-        <div id="aviso-compra"></div>
-    </div>
   
-<button class="accordion">Registrar productos</button>
-<div class="panel">
+  
+
     <form id="nuevo-producto-form">
         <h2>Agregar Nuevo Producto</h2>
-        <label for="clase">Categoria:</label>
+        <label for="clase">Categoría:</label>
         <input type="text" id="clase" name="clase" required><br>
-    <br>
-    <label for="clase">Codigo:</label>
-    <input type="text" id="codigo" name="codigo" required><br>
-<br>
+    
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo" required><br>
+    
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br>
-        <br>
+    
         <label for="color">Color:</label>
-        <input type="text" id="color" ></textarea><br>
-        <br>
+        <input type="text" id="color" name="color"><br>
+    
         <label for="precio">Precio:</label>
         <input type="number" id="precio" name="precio" required><br>
-        <br>
+    
         <label for="imagenes">Imágen:</label>
         <input type="text" id="imagenes" name="imagenes" required><br>
-        <br>
+    
         <label for="descripcion">Descripción:</label>
         <textarea id="descripcion" name="descripcion" required></textarea><br>
-        <br>
+    
         <button type="submit">Agregar Producto</button>
-      </form>
-</div>
+    </form>
+    
+
     <footer class="contacto-Maquetacion">
         <div class="contact">
-            <p>ferreteria</p>
-            <p>36846516</p>
+            <p>RepairTools.com</p>
+            <p>3015051174</p>
         </div>
-        <div class="maquetacion">
-  
-        </div>
+        
     </footer>
     <script src="productos.js"></script>
  

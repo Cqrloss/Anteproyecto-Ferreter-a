@@ -1,0 +1,1 @@
+Cree la maqueta de la pagina, agregue un menu de 4 opciones un boton para acceder a la pagina de busqueda y el logo de la pagina 

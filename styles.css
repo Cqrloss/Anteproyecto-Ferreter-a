@@ -3,7 +3,7 @@ body {
     background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
 }
- 
+
 .logo-inicio{
     position: absolute;
     left: 2%;
@@ -11,9 +11,11 @@ body {
 .inicio{
     display: flex;
     justify-content: space-around;
- 
-    background-color: #c1c1c1;
-    
+    border-bottom: 2px solid rgb(171, 9, 9); 
+    border-top: none; 
+    border-left: none; 
+    border-right: none; 
+   
     padding: 10px; 
 }
 .lista-inicio{
@@ -30,7 +32,7 @@ body {
 .opciones-lista-inicio:hover{
     margin: 10px;
     font-weight: bold;
-    color: rgb(97, 20, 20);
+    color: rgb(9, 171, 144);
     transform: scale(1.1); 
 }
 .iconos{
@@ -44,7 +46,6 @@ body {
     padding-left: 5%;
     padding-top: 2%;
 }
-
 
 .bane{
     max-width: 100%;
@@ -60,9 +61,14 @@ body {
 }
 .aa:hover {
     text-decoration: none; 
-    color: rgb(97, 20, 20); 
+    color: rgb(171, 9, 9); 
 }
-
+.container_registro{
+    margin: 10%;
+    background-color: rgb(221, 226, 217);
+    
+    border: 2px solid rgb(171, 9, 9); 
+}
 .registro{
     justify-content: center;
     text-align: center;
@@ -75,13 +81,17 @@ body {
     margin: 10px;
 }
 .contacto-Maquetacion{
-background-color: rgb(49, 24, 24);
+background-color: rgb(141, 11, 11);
 }
 
 .contact{
     font-size: small;
     text-align: center;
     color: white;
+}
+.maquetacion{
+    font-size: small;
+    
 }
 
 #whatsapp-button {
@@ -103,7 +113,78 @@ background-color: rgb(49, 24, 24);
     height: 100%;
     border-radius: 50%;
   }
-  
+
+#nuevo-producto-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#nuevo-producto-form h2 {
+    color: #333;
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+
+#nuevo-producto-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+}
+
+#nuevo-producto-form input[type="text"],
+#nuevo-producto-form input[type="number"],
+#nuevo-producto-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+
+#nuevo-producto-form input[type="text"]:focus,
+#nuevo-producto-form input[type="number"]:focus,
+#nuevo-producto-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+
+#nuevo-producto-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#nuevo-producto-form button:hover {
+    background-color: #0056b3;
+}
+
+
+#nuevo-producto-form br {
+    margin-bottom: 10px;
+}
+
+
+
   #whatsapp-button:hover {
     filter: brightness(90%);
   }
@@ -111,9 +192,9 @@ background-color: rgb(49, 24, 24);
     font-weight: bold;
   }
   .producto {
-    width: 300px;
-    height: 350px;
-    border: 3px solid rgb(97, 20, 20);
+    width: 350px;
+    height: 450px;
+    border: 3px solid rgb(171, 9, 9);
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
@@ -142,6 +223,26 @@ background-color: rgb(49, 24, 24);
     margin-top: 20px;
 }
 
+#paginacion-container button {
+    background-color: #f0f0f0;
+    border-radius: 40px;
+    
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#paginacion-container button:hover {
+    background-color: #ffa1a1;
+}
+
+#paginacion-container button.active {
+    background-color: rgb(171, 9, 9);
+    color: white;
+    border-color: #ff4d00;
+}
 
   
 #productos-container {
@@ -153,9 +254,10 @@ background-color: rgb(49, 24, 24);
 }
 
 .producto {
-    background-color: #f9f9f9;
+    background-color: #b90000;
+    color: white;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 15px;
     text-align: center;
     max-width: 200px;
@@ -184,42 +286,65 @@ background-color: rgb(49, 24, 24);
 
 
 .precio {
-    color: rgb(22, 97, 20);
+    color: rgb(171, 9, 9);
     font-weight: bold;
   }
+  #carrito-container {
+    border: 2px solid rgb(171, 9, 9);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto; 
+    max-width: 400px; 
+    background-color: #f9f9f9;
+  }
   
+  
+  .carrito-lista {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .carrito-lista li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .carrito-lista li:last-child {
+    border-bottom: none;
+  }
+  
+  #carrito-total {
+    font-weight: bold;
+  }
+  .accordion {
+    background-color: #eee;
+    color: rgb(171, 9, 9);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
 .panel {
     padding: 0 18px;
     display: none;
     background-color: white;
     overflow: hidden;
 }
-.promtext{
-text-align: center;
-font-style: italic;
-color:white;
-margin: 5px;
 
-}
-.textodiv{
-    background-color: rgb(97, 20, 20);
-}
-.vidiosxd{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
 
-}
-iframe{
-    margin: 1%;
-    width: 520px;
-    height: 275px;
-}
 
-canvas {
-    width: 100%;
-    height: 20%;
-  }
+
+
   
 
   .a-second-title {
@@ -246,16 +371,17 @@ canvas {
   margin: 7%;
   }
 .texto-productos-index{
-    margin: 4%;
-    background-color: #ffffff;
-    
+    margin: 7%;
+    background-color: #e6e6e6;
+    border: #333;
+    border-style: dotted;
     transition: transform 0.3s; 
 }
 .texto-productos-index:hover{
    transform: scale(1.02);
 }
 .productos-Index{
-    border: #679170;
+    border: #916767;
     border-style: double;
     text-align: center;
     padding-top: 10px;
@@ -329,7 +455,7 @@ select option[disabled] {
 }
 
 .instrucciones-registro h2 {
-    color: rgb(22, 97, 20);
+    color: rgb(171, 9, 9);
     margin-top: 20px;
 }
 
@@ -368,7 +494,7 @@ select option[disabled] {
 
 
 .opcion-busqueda {
-    background-color: rgb(22, 97, 20); 
+    background-color: rgb(171, 9, 9); 
     color: white;
     padding: 10px 20px; 
     font-size: 16px; 
@@ -388,9 +514,9 @@ select option[disabled] {
     width: 300px;
   }
   .la_busqueda{
-    display: flex; /* Usar flexbox para centrar */
+    display: flex; 
 
-  height: 100px; /* Altura del contenedor (ajústalo según sea necesario) */
+  height: 100px;
   }
 .texto-busqueda{
    margin: 0.5%;
@@ -441,17 +567,3 @@ select option[disabled] {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-    .informacion_ {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .informacion_ div, .informacion_ img {
-        max-width: 100%;
-    }
-
-    .informacion_ img {
-        margin-top: 20px;
-    }
-}

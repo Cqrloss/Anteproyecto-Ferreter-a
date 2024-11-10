@@ -20,297 +20,297 @@ document.addEventListener('DOMContentLoaded', function() {
   const productos = [
     {
       id: 1,
-      Codigo:"INS001C",
-      clase:"instrumento",
-      color:"Madera",
-      nombre: "Guitarra Eléctrica Yamaha PAC112J Natural",
-      precio: 1350000,
-      imagenes: ["resources/images/productos/Instrumentos/Yamaha1.jpg"],
-      descripcion: "La Yamaha Pacifica 112J alberga versatilidad en su naturaleza. Equipado con un humbucker de cerámica de puente, los músicos pueden sacar los tonos solistas intensos y cálidos que definieron el género del rock 'n' roll."
+      Codigo:"HER001C",
+      clase:"Herramienta",
+      color:"Gris",
+      nombre: "Martillo Latonero 11 Oz",
+      precio: 25000,
+      imagenes: ["resources/images/productos/Instrumentos/Martillos.jfif"],
+      descripcion: " Modelo : TRP16864 , Términos Garantía : Directamente con la marca en sus centros de servicio técnico autorizados a nivel nacional, Garantía Producto : 12 meses."
     },
     {
       id: 2,
-      Codigo:"INS002C",
-      clase:"instrumento",
-      color:"Blanco",
-      nombre: "Bajo Eléctrico Squier Affinity Precision Bass PJ",
-      precio: 899000,
-      imagenes: ["resources/images/productos/Instrumentos/bajo1.webp"],
-      descripcion: "El Squier Affinity Precision Bass PJ ofrece un sonido clásico y una sensación familiar a un precio increíble. Perfecto para bajistas principiantes e intermedios."
+      Codigo:"HER002C",
+      clase:"Herramienta",
+      color:"Negro",
+      nombre: "Martillo Astillador 12.000BPM TFC-200",
+      precio: 89000,
+      imagenes: ["resources/images/productos/Instrumentos/Martillos2.jfif"],
+      descripcion: "Siempre use la cantidad correcta de presión de aire establecida en el manual de operación adjunto en la herramienta, en caso de que el manual de operación no este incluido en la herramienta al comprar"
     },
     {
       id: 3,
-      Codigo:"INS001T",
-      clase:"instrumento",
-      color:"Negro",
-      nombre: "Teclado Yamaha PSR-E373",
-      precio: 1249000,
-      imagenes: ["resources/images/productos/Instrumentos/teclado1.jpg"],
-      descripcion: "El Yamaha PSR-E373 es un teclado versátil con una amplia gama de funciones y sonidos. Perfecto para principiantes que buscan aprender a tocar el piano o para músicos experimentados que buscan un teclado portátil para actuaciones en vivo."
+      Codigo:"BRO001B",
+      clase:"Herramienta",
+      color:"Amarillo",
+      nombre: "Kit de Brochas",
+      precio: 67000,
+      imagenes: ["resources/images/productos/Instrumentos/Brochas.jfif"],
+      descripcion: "Con este Kit de Brochas podrás pintar lo que gustes dependiendo sus tamaños."
     },
     {
       id: 4,
-      Codigo:"INS001P",
-      clase:"instrumento",
-      color:"Naranja",
-      nombre: "Batería Acústica Pearl Export ELX",
-      precio: 3299000,
-      imagenes: ["resources/images/productos/Instrumentos/bateria1.jpg"],
-      descripcion: "La Pearl Export ELX es una batería de alta calidad que ofrece un sonido excelente y una gran durabilidad. Perfecta para bateristas de todos los niveles."
+      Codigo:"TAL001T",
+      clase:"Herramienta",
+      color:"Negro",
+      nombre: "Taladro Automático",
+      precio: 130000,
+      imagenes: ["resources/images/productos/Instrumentos/Taladro.jfif"],
+      descripcion: "Taladro de excelente calidad, utilizalo con confianza."
     },
     {
       id: 5,
-      Codigo:"INS003C",
-      clase:"instrumento",
-      color:"Madera Oscura",
-      nombre: "Ukelele Soprano Kala KA-15S",
-      precio: 149000,
-      imagenes: ["resources/images/productos/Instrumentos/ukelele1.jpg"],
-      descripcion: "El Kala KA-15S es un ukelele soprano asequible y de alta calidad. Perfecto para principiantes que buscan aprender a tocar el ukelele o para músicos experimentados que buscan un ukelele portátil para viajar."
+      Codigo:"SER00S",
+      clase:"Herramienta",
+      color:"Amarrilo",
+      nombre: "Serrucho STANLEY 550MM",
+      precio: 30000,
+      imagenes: ["resources/images/productos/Instrumentos/serrucho.jfif"],
+      descripcion: "Serrucho de excelente calidad, utilizalo con confianza."
     },
     {
       id: 6,
-      Codigo:"AMP001G",
-      clase:"amplificador",
+      Codigo:"EXT001E",
+      clase:"Cables",
       color:"Negro",
-      nombre: "Amplificador de Guitarra Marshall MG10",
-      precio: 649000,
-      imagenes: ["resources/images/productos/Instrumentos/ampli1.webp"],
-      descripcion: "El Marshall MG10 es un amplificador de guitarra compacto y potente que ofrece un sonido clásico de Marshall. Perfecto para guitarristas principiantes e intermedios."
+      nombre: "Extensiones",
+      precio: 12000,
+      imagenes: ["resources/images/productos/Instrumentos/extensiones.jpg"],
+      descripcion: "Extensiones de alta calidad de todo tipo de tamaño."
     },
     {
       id: 7,
-      Codigo:"ACC001",
-      clase:"accesorios",
-      color:"Transparente",
-      nombre: "Audífonos In-Ear Shure SE215",
-      precio: 399000,
-      imagenes: ["resources/images/productos/Instrumentos/inear1.jpg"],
-      descripcion: "Los Shure SE215 son audífonos in-ear que ofrecen un sonido claro y preciso. Perfectos para músicos que necesitan escuchar su música con detalle."
+      Codigo:"PIN001P",
+      clase:"Pinturas",
+      color:"Gris",
+      nombre: "Pinturas de todo tipo de Marca",
+      precio: 39900,
+      imagenes: ["resources/images/productos/Instrumentos/pinturas.jfif"],
+      descripcion: "Pinturas de todo tipo de marca de excelente calidad"
     },
     {
       id: 8,
-      Codigo:"ACC002",
-      clase:"accesorios",
-      color:"Negro",
-      nombre: "Atril para Partituras K&M 18880",
-      precio: 129000,
-      imagenes: ["resources/images/productos/Instrumentos/atril1.jpg"],
-      descripcion: "El K&M 18880 es un atril para partituras resistente y ajustable. Perfecto para músicos de todos los niveles."
+      Codigo:"LLA001L",
+      clase:"Llaves",
+      color:"Plateado",
+      nombre: "Kit de Llaves",
+      precio: 30000,
+      imagenes: ["resources/images/productos/Instrumentos/llaveskit.jfif"],
+      descripcion: "Las llaves son herramientas que se utilizan para realizar ajustes mecánicos de todo tipo, tienen una cabeza o boca en cada uno de sus dos costados y pueden ser de forma diferente o iguales."
     },
     {
       id: 9,
-      Codigo:"ACC003",
-      clase:"accesorios",
-      color:"Negro",
-      nombre: "Capo Planet Waves NS Pro",
-      precio: 39000,
-      imagenes: ["resources/images/productos/Instrumentos/capo1.webp"],
-      descripcion: "El Planet Waves NS Pro es un capo versátil y fácil de usar. Perfecto para guitarristas que necesitan cambiar rápidamente de tono."
+      Codigo:"GUA001G",
+      clase:"Accesorio",
+      color:"Amarillo",
+      nombre: "Guantes para construcción",
+      precio: 18000,
+      imagenes: ["resources/images/productos/Instrumentos/guantes.jfif"],
+      descripcion: "Nuestros guantes de ferretería están diseñados para ofrecer máxima protección y comodidad durante trabajos pesados, brindando seguridad y agarre confiable en una amplia variedad de tareas. Ideales para carpintería, construcción, trabajos mecánicos y otros proyectos, estos guantes protegen tus manos sin sacrificar la destreza y precisión."
     },
     
 
 {
     id: 10,
-    Codigo:"ACC004",
-    clase:"accesorios",
-    color:"Negro",
-    nombre: "Afinador Digital Korg TM-70T",
-    precio: 49000,
-    imagenes: ["resources/images/productos/Instrumentos/afinador1.jpg"],
-    descripcion: "El Korg TM-70T es un afinador digital preciso y fácil de usar. Perfecto para músicos de todos los niveles."
+    Codigo:"MET001",
+    clase:"Herramienta",
+    color:"Naranja",
+    nombre: "Metro - Medidor TRUPER",
+    precio: 12000,
+    imagenes: ["resources/images/productos/Instrumentos/metro.jfif"],
+    descripcion: "Cinta métrica compacta de la marca Truper, con una longitud de medición de 8 metros o 26 pies. El diseño es compacto y robusto, ideal para trabajos de medición precisos y cómodos en el hogar o en proyectos profesionales."
   },
   {
     id: 11,
-    Codigo:"ACC005",
-    clase:"accesorios",
+    Codigo:"BAT002",
+    clase:"Herramienta",
     color:"Negro",
-    nombre: "Metrónomo Digital Boss DB-30",
-    precio: 69000,
-    imagenes: ["resources/images/productos/Instrumentos/metro1.webp"],
-    descripcion: "El Boss DB-30 es un metrónomo digital preciso y versátil. Perfecto para músicos que necesitan practicar con un ritmo constante."
+    nombre: "Kit de Baterias",
+    precio: 17000,
+    imagenes: ["resources/images/productos/Instrumentos/kitbaterias.jfif"],
+    descripcion: "Este kit de baterías recargables es la solución ideal para mantener todos tus dispositivos electrónicos en funcionamiento sin necesidad de comprar baterías desechables constantemente. Con una tecnología de carga rápida y una larga duración de carga, este kit es perfecto para cámaras, herramientas eléctricas, juguetes, linternas y otros dispositivos de uso frecuente."
   },
   {
     id: 12,
-    Codigo:"ACC006",
-    clase:"accesorios",
-    color:"Plateado",
-    nombre: "Pedalera Multiefectos Zoom G5",
-    precio: 849000,
-    imagenes: ["resources/images/productos/Instrumentos/pedal.webp"],
+    Codigo:"ALI001",
+    clase:"Herramienta",
+    color:"Rojo",
+    nombre: "Kit de Alicates",
+    precio: 20000,
+    imagenes: ["resources/images/productos/Instrumentos/alicates.jfif"],
     descripcion: "El Zoom G5 es una pedalera multiefectos que ofrece una amplia gama de efectos y sonidos. Perfecto para guitarristas que buscan experimentar con diferentes sonidos."
   },
   {
     id: 13,
-   Codigo:"SON001",
-    clase:"sonido",
-   color:"Rojo", 
-   nombre: "Interface de Audio Focusrite Scarlett 2i2",
-    precio: 599000,
-    imagenes: ["resources/images/productos/Instrumentos/tarjeta1.jpg"],
-    descripcion: "La Focusrite Scarlett 2i2 es una interfaz de audio de alta calidad que permite grabar y reproducir audio en un ordenador. Perfecta para músicos que quieren crear música en casa."
+   Codigo:"CAS001C",
+    clase:"Accesorios",
+   color:"Amarillo", 
+   nombre: "Casco para seguridad ",
+    precio: 20000,
+    imagenes: ["resources/images/productos/Instrumentos/cascos.jfif"],
+    descripcion: "Los cascos de seguridad son equipos de protección personal (EPP) diseñados para proteger la cabeza de lesiones causadas por impactos, caídas de objetos, golpes con estructuras, y otros riesgos presentes en entornos de trabajo peligrosos como la construcción, la industria y la minería. Estos cascos generalmente están fabricados de materiales resistentes como policarbonato, polietileno o fibra de vidrio, que absorben y distribuyen la energía del impacto para minimizar el daño."
   },
   {
     id: 14,
-    Codigo:"",
-    clase:"software",
-    color:"",
-    nombre: "Software de Producción Musical Ableton Live Lite",
-    precio: 349000,
-    imagenes: ["resources/images/productos/Instrumentos/ableton.webp"],
-    descripcion: "El Ableton Live Lite es un software de producción musical que permite grabar, editar y producir música. Perfecto para músicos que quieren crear música electrónica o experimental."
+    Codigo:"MAL001M",
+    clase:"Herramienta",
+    color:"Gris",
+    nombre: "Mallas Plateadas ferretería",
+    precio: 2000,
+    imagenes: ["resources/images/productos/Instrumentos/Mallas.jpg"],
+    descripcion: "Mallas x metro de buena calidad"
   },
   {
     id: 15,
-    Codigo:"",
-    clase:"microfonos",
+    Codigo:"TOR001",
+    clase:"Tornillos",
     color:"Plateado",
-    nombre: "Micrófono de Condensador Behringer C-1U",
-    precio: 149000,
-    imagenes: ["resources/images/productos/Instrumentos/micro1.png"],
+    nombre: "Tornillos de todo tipo",
+    precio: 500,
+    imagenes: ["resources/images/productos/Instrumentos/tornillos.jfif"],
     descripcion: "El Behringer C-1U es un micrófono de condensador de alta calidad que es perfecto para grabar voces e instrumentos acústicos."
   },
   {
     id: 16,
-    Codigo:"SON002",
-    clase:"sonido",
-    color:"Negro",
-    nombre: "Audífonos de Estudio Beyerdynamic DT770 Pro",
-    precio: 699000,
-    imagenes: ["resources/images/productos/Instrumentos/audifonos1.jpg"],
-    descripcion: "Los Beyerdynamic DT770 Pro son audífonos de estudio cerrados que ofrecen un sonido claro y preciso. Perfectos para músicos que necesitan escuchar su música con detalle en un entorno de estudio."
+    Codigo:"BOM001",
+    clase:"Herramienta",
+    color:"Blancos",
+    nombre: "Bombillos de todo tipo de tamaño",
+    precio: 2500,
+    imagenes: ["resources/images/productos/Instrumentos/bombillos.jfif"],
+    descripcion: "Bombillos de todo tipo de tamaño, buena calidad."
   },
   {
     id: 17,
-    Codigo:"SON003",
-    clase:"sonido",
+    Codigo:"TEN001",
+    clase:"Herramienta",
     color:"Negro",
-    nombre: "Monitores de Estudio Yamaha HS7",
-    precio: 2399000,
-    imagenes: ["resources/images/productos/Instrumentos/monitor1.webp"],
-    descripcion: "Los Yamaha HS7 son monitores de estudio de campo cercano que ofrecen un sonido preciso y equilibrado. Perfectos para músicos que necesitan mezclar y masterizar su música."
+    nombre: "Tenazas",
+    precio: 5000,
+    imagenes: ["resources/images/productos/Instrumentos/Tenazas.jfif"],
+    descripcion: "Tenazas de todo tipo, de buena calidad."
   },
   {
     id: 18,
-    Codigo:"",
-    clase:"software",
+    Codigo:"CUT001C",
+    clase:"Herramienta",
     color:"Negro",
-    nombre: "Software de Partituras Sibelius",
-    precio: 399000,
-    imagenes: ["resources/images/productos/Instrumentos/software1.png"],
-    descripcion: "El Sibelius es un software de partituras que permite crear, editar e imprimir partituras musicales. Perfecto para compositores, arreglistas y estudiantes de música."
+    nombre: "Cúters y navajas",
+    precio: 6000,
+    imagenes: ["resources/images/productos/Instrumentos/cuters.jfif"],
+    descripcion: "Cúters y navajas de todo tipo."
   },
   {
     id: 19,
-    Codigo:"",
-    clase:"teoria",
+    Codigo:"SIE001",
+    clase:"Herramienta",
     color:"Negro",
-    nombre: "Curso de Guitarra para Principiantes",
-    precio: 199000,
-    imagenes: ["resources/images/productos/Instrumentos/curso.webp"],
-    descripcion: "El Curso de Guitarra para Principiantes es un curso completo que te enseñará a tocar la guitarra desde cero. Perfecto para personas que siempre han querido aprender a tocar la guitarra."
+    nombre: "Sierra Caladora",
+    precio: 120000,
+    imagenes: ["resources/images/productos/Instrumentos/sierra.jfif"],
+    descripcion: "Sierra caladora grande"
   },
 
 
   {
     id: 20,
-    Codigo:"",
-    clase:"teoria",
-    color:"Negro",
-    nombre: "Libro de Teoría Musical para Principiantes",
-    precio: 89000,
-    imagenes: ["resources/images/productos/Instrumentos/libro1.webp"],
-    descripcion: "El Libro de Teoría Musical para Principiantes es un libro completo que te enseñará los conceptos básicos de la teoría musical. Perfecto para músicos que quieren aprender a leer y escribir música."
+    Codigo:"COMP001",
+    clase:"Equipo",
+    color:"Gris",
+    nombre: "Compresores de aire",
+    precio: 300000,
+    imagenes: ["resources/images/productos/Instrumentos/Compresores de aire.jfif"],
+    descripcion: "Compresores de aire de buena calidad."
   },
   {
     id: 21,
-   Codigo:"REP001G",
-    clase:"repuestos",
-   color:"Negro-Madera", 
-   nombre: "Diapasón de Guitarra",
-    precio: 98600,
-    imagenes: ["resources/images/productos/Instrumentos/diapason1.webp"],
-    descripcion: "El diapasón de guitarra es un accesorio esencial para cualquier guitarrista. Se utiliza para cambiar de tono y tocar diferentes acordes."
+   Codigo:"PUL001",
+    clase:"Equipo",
+   color:"Negro", 
+   nombre: "Pulidoras",
+    precio: 154000,
+    imagenes: ["resources/images/productos/Instrumentos/pulidoras.jfif"],
+    descripcion: "Pulidoras de buena marca y calidad."
   },
   {
     id: 22,
-    Codigo:"ACC007",
-    clase:"accesorios",
-    color:"Negro, Morado, Rosa, Azul",
-    nombre: "Púa de Bajo Dunlop Tortex 1.14mm",
-    precio: 5000,
-    imagenes: ["resources/images/productos/Instrumentos/pua1.jpg"],
-    descripcion: "La púa de bajo Dunlop Tortex 1.14mm es una púa gruesa y resistente que es perfecta para tocar el bajo eléctrico."
+    Codigo:"SOL001",
+    clase:"Equipo",
+    color:"Negro",
+    nombre: "Soldadoras",
+    precio: 200000,
+    imagenes: ["resources/images/productos/Instrumentos/Soldadoras.jfif"],
+    descripcion: "Soldadoras de buena calidad y de todo tipo de color."
   },
   {
     id: 23,
-    Codigo:"ACC008",
-    clase:"accesorios",
+    Codigo:"DEC001",
+    clase:"Equipo",
     color:"Negro",
-    nombre: "Correa de Guitarra Fender Nylon",
-    precio: 39000,
-    imagenes: ["resources/images/productos/Instrumentos/correa1.webp"],
-    descripcion: "La correa de guitarra Fender Nylon es una correa cómoda y duradera que es perfecta para guitarristas de todos los niveles."
+    nombre: "Decapadoras",
+    precio: 150000,
+    imagenes: ["resources/images/productos/Instrumentos/Decapadoras.jfif"],
+    descripcion: "Decapadoras de todo tipo de colores y buena calidad."
   },
   {
     id: 24,
-    Codigo:"ACC009",
-    clase:"accesorios",
-    color:"Negro",
-    nombre: "Capo Transpositor D'Addario Planet Waves NS Capo",
-    precio: 49000,
-    imagenes: ["resources/images/productos/Instrumentos/capo2.jpg"],
-    descripcion: "El capo transpositor D'Addario Planet Waves NS Capo es un capo versátil que permite cambiar de tono en cualquier guitarra."
+    Codigo:"ARA001",
+    clase:"Tornillos",
+    color:"Plateado",
+    nombre: "Arandelas",
+    precio: 500,
+    imagenes: ["resources/images/productos/Instrumentos/Arandelas.jfif"],
+    descripcion: "Arandelas de todo tipo de tamaño."
   },
   {
     id: 25,
-    Codigo:"ACC0010",
-    clase:"accesorios",
-    color:"Negro",
-    nombre: "Afinador de Guitarra Clip Korg Pitchclip 2",
-    precio: 59000,
-    imagenes: ["resources/images/productos/Instrumentos/afinador2.jpg"],
-    descripcion: "El afinador de guitarra clip Korg Pitchclip 2 es un afinador preciso y fácil de usar que se engancha en la clavija de la guitarra."
+    Codigo:"MADE001",
+    clase:"Material",
+    color:"Madera",
+    nombre: "Tablones de madera",
+    precio: 30000,
+    imagenes: ["resources/images/productos/Instrumentos/maderas.jfif"],
+    descripcion: "Tablones de madera de buena calidad y fina."
   },
   {
     id: 26,
-    Codigo:"ACC0011",
-    clase:"accesorios",
-    color:"Negro",
-    nombre: "Soporte para Guitarra Hercules Stands GS0032B",
-    precio: 99000,
-    imagenes: ["resources/images/productos/Instrumentos/soporte1.jpg"],
-    descripcion: "El soporte para guitarra Hercules Stands GS0032B es un soporte resistente y plegable que es perfecto para guardar tu guitarra de forma segura."
+    Codigo:"GAF001",
+    clase:"Accesorios",
+    color:"Amarillas",
+    nombre: "Gafas protectoras",
+    precio: 12000,
+    imagenes: ["resources/images/productos/Instrumentos/gafas.jfif"],
+    descripcion: "Gafas protectoras de buena calidad."
   },
   {
     id: 27,
-    Codigo:"ACC0012",
-    clase:"accesorios",
+    Codigo:"PLA002",
+    clase:"Material",
     color:"Negro",
-    nombre: "Funda para Guitarra Gator G-PG-64 Deluxe",
+    nombre: "Placas",
     precio: 149000,
-    imagenes: ["resources/images/productos/Instrumentos/funda1.jpg"],
-    descripcion: "La funda para guitarra Gator G-PG-64 Deluxe es una funda acolchada y resistente que protege tu guitarra de golpes y arañazos."
+    imagenes: ["resources/images/productos/Instrumentos/placas.jfif"],
+    descripcion: "Placas de buena calidad y precio."
   },
   {
     id: 28,
-    Codigo:"AMP001B",
-    clase:"amplificador",
+    Codigo:"",
+    clase:"Accesorios",
     color:"Negro",
-    nombre: "Amplificador de Bajo Ampeg BA-115",
-    precio: 1990000,
-    imagenes: ["resources/images/productos/Instrumentos/ampli2.jpg"],
-    descripcion: "El Ampeg BA-115 es un amplificador de bajo potente y versátil que es perfecto para bajistas de todos los niveles."
+    nombre: "Mascarillas y respiradores",
+    precio: 20000,
+    imagenes: ["resources/images/productos/Instrumentos/mascaras.jfif"],
+    descripcion: "Mascarillas y respiradores de buena calidad."
   },
   {
     id: 29,
-    Codigo:"INS001C",
-    clase:"instrumento",
+    Codigo:"",
+    clase:"Accesorios",
     color:"Negro",
-    nombre: "Batería Electrónica Roland TD-1KPX",
-    precio: 2499000,
-    imagenes: ["resources/images/productos/Instrumentos/bateria2.webp"],
-    descripcion: "La Roland TD-1KPX es una batería electrónica compacta y portátil que es perfecta para bateristas que quieren practicar en casa o tocar en espacios pequeños."
+    nombre: "Chalecos reflectantes",
+    precio: 20000,
+    imagenes: ["resources/images/productos/Instrumentos/chaleco.jfif"],
+    descripcion: "Chalecos reflectantes de buena calidad."
   },
 
   {
@@ -318,195 +318,105 @@ document.addEventListener('DOMContentLoaded', function() {
     Codigo:"ACC0013",
     clase:"accesorios",
     color:"Negro, Morado, Rosa, Azul",
-    nombre: "Plectro para Guitarra Acústica Dunlop 1.14mm",
-    precio: 3000,
-    imagenes: ["resources/images/productos/Instrumentos/pua2.webp"],
-    descripcion: "Un plectro para guitarra acústica de Dunlop, hecho de material duradero y con un agarre cómodo."
+    nombre: "Botas de seguridad",
+    precio: 30000,
+    imagenes: ["resources/images/productos/Instrumentos/botas.jfif"],
+    descripcion: "Botas de buena calidad"
   },
   {
     id: 32,
     Codigo:"ACC0014",
     clase:"accesorios",
     color:"Negro",
-    nombre: "Soporte para Guitarra K&M 18820",
-    precio: 199000,
-    imagenes: ["resources/images/productos/Instrumentos/soporte2.webp"],
-    descripcion: "Un soporte para guitarra de K&M, hecho de material resistente y ajustable a diferentes alturas."
+    nombre: "Audifonos",
+    precio: 50000,
+    imagenes: ["resources/images/productos/Instrumentos/audifonos.jfif"],
+    descripcion: "Audifonos de buena calidad."
   },
   {
     id: 33,
     Codigo:"ACC0015",
     clase:"accesorios",
     color:"Cafe(Interior:Rojo)",
-    nombre: "Fundas para Instrumento Gator G-PG-60",
+    nombre: "Arnés de seguridad",
     precio: 149000,
-    imagenes: ["resources/images/productos/Instrumentos/funda2.webp"],
-    descripcion: "Una funda para instrumento de Gator, hecha de material impermeable y con acolchado para proteger tu instrumento."
+    imagenes: ["resources/images/productos/Instrumentos/arnes.jfif"],
+    descripcion: "Arnes de buena seguridad y calidad."
   },
   {
     id: 34,
     Codigo:"REP001G",
-    clase:"repuestos",
+    clase:"Equipos",
     color:"Madera",
-    nombre: "Diapasón para Guitarra Fender American Standard",
-    precio: 299000,
-    imagenes: ["resources/images/productos/Instrumentos/diapason2.webp"],
-    descripcion: "Un diapasón para guitarra Fender American Standard, hecho de madera de alta calidad y con un acabado impecable."
+    nombre: "Bandejas para pintura",
+    precio: 30000,
+    imagenes: ["resources/images/productos/Instrumentos/bandas.jfif"],
+    descripcion: "Bandejas para pintura de buena calidad."
   },
   {
     id: 35,
     Codigo:"REP001G",
     clase:"repuestos",
     color:"Dorado, Plateado",
-    nombre: "Cuerdas para Guitarra Eléctrica D'Addario NYXL0949",
+    nombre: "Aerosoles",
     precio: 25000,
-    imagenes: ["resources/images/productos/Instrumentos/cuerdas1.webp"],
-    descripcion: "Un juego de cuerdas para guitarra eléctrica D'Addario NYXL0949, hechas de acero inoxidable y con un tono brillante."
+    imagenes: ["resources/images/productos/Instrumentos/Aerosoles.jfif"],
+    descripcion: "Aerosoles de todo tipo de color."
   },
   {
     id: 36,
     Codigo:"REP001G",
     clase:"repuestos",
     color:"Dorado, Plateado",
-    nombre: "Cuerdas para Guitarra Eléctrica D'Addario NYXL0949 (POR UNIDAD)",
-    precio: 6000,
-    imagenes: ["resources/images/productos/Instrumentos/cuerdas1.webp"],
-    descripcion: "Un juego de cuerdas para guitarra eléctrica D'Addario NYXL0949, hechas de acero inoxidable y con un tono brillante."
+    nombre: "Grifos y mezcladoras",
+    precio: 60000,
+    imagenes: ["resources/images/productos/Instrumentos/Grifos y mezcladoras.jfif"],
+    descripcion: "Grifos y mezcladoras de buena calidad"
   },
   {
     id: 37,
     Codigo:"ACC0016",
     clase:"accesorios",
     color:"Dorado",
-    nombre: "Afinador de Guitarra Clip Korg Pitchclip 2",
+    nombre: "Selladores",
     precio: 59000,
-    imagenes: ["resources/images/productos/Instrumentos/afinador3.jpg"],
-    descripcion: "Un afinador de guitarra clip Korg Pitchclip 2, que te permite afinar tu guitarra de forma rápida y precisa."
+    imagenes: ["resources/images/productos/Instrumentos/Selladores.jfif"],
+    descripcion: "Selladores de todo tipo de color."
   },
   {
     id: 38,
     Codigo:"ACC0017",
     clase:"accesorios",
     color:"Negro",
-    nombre: "Capo Planet Waves NS Deluxe",
-    precio: 69000,
-    imagenes: ["resources/images/productos/Instrumentos/capo3.jpg"],
-    descripcion: "Un capo Planet Waves NS Deluxe, hecho de materiales de alta calidad y con un diseño ergonómico."
+    nombre: "Cables y alambres",
+    precio: 500,
+    imagenes: ["resources/images/productos/Instrumentos/alambres.jfif"],
+    descripcion: "Cables y alambres de todo tipo y tamaño"
   },
   {
     id: 39,
     Codigo:"ACC0018",
     clase:"accesorios",
     color:"Azul, Negro, Rojo",
-    nombre: "Púa Dunlop Tortex Flow 1.0mm",
+    nombre: "Interruptores y enchufes",
     precio: 4000,
-    imagenes: ["resources/images/productos/Instrumentos/pua.jpg"],
-    descripcion: "Un púa Dunlop Tortex Flow 1.0mm, hecha de material flexible y con un agarre antideslizante."
+    imagenes: ["resources/images/productos/Instrumentos/enchufes.jfif"],
+    descripcion: "Interruptores y enchufes de buena calidad"
   },
   {
     id: 40,
     Codigo:"ACC0019",
     clase:"accesorios",
     color:"Negro",
-    nombre: "Soporte para Partituras Manfrotto MSB2311B",
+    nombre: "Canaletas y tubos eléctricos",
     precio: 99000,
-    imagenes: ["resources/images/productos/Instrumentos/atril.png"],
-    descripcion: "Un soporte para partituras Manfrotto MSB231"
+    imagenes: ["resources/images/productos/Instrumentos/canaletas.jfif"],
+    descripcion: "Canaletas y tubos eléctricos de todo tipo."
   },
 
 
 
-  {
-    id: 41,
-    Codigo:"ACC020",
-    clase:"accesorios",
-    color:"Negro",
-    nombre: "Soporte para Guitarra Hercules GS525B",
-    precio: 199000,
-    imagenes: ["resources/images/productos/Instrumentos/soporte.jpg"],
-    descripcion: "El Hercules GS525B es un soporte para guitarra resistente y plegable que es perfecto para guardar tu guitarra de forma segura."
-  },
-  {
-    id: 42,
-    Codigo:"ACC021",
-    clase:"Azul, Negro, Rojo",
-    color:"Negro",
-    nombre: "Púa de Bajo Dunlop Tortex 1.14mm",
-    precio: 5000,
-    imagenes: ["resources/images/productos/Instrumentos/pua.jpg"],
-    descripcion: "La púa de bajo Dunlop Tortex 1.14mm es una púa duradera que ofrece un sonido brillante y definido. Perfecta para bajistas que necesitan tocar con fuerza."
-  },
-  {
-    id: 43,
-    Codigo:"ACC022",
-    clase:"accesorios",
-    color:"Negro",
-    nombre: "Correa de Guitarra Fender Classic Monogram",
-    precio: 79000,
-    imagenes: ["resources/images/productos/Instrumentos/correa1.webp"],
-    descripcion: "La correa de guitarra Fender Classic Monogram es una correa de cuero duradera y elegante que es perfecta para guitarristas de todos los niveles."
-  },
-  {
-    id: 44,
-    Codigo:"ACC023",
-    clase:"accesorios",
-    color:"Negro",
-    nombre: "Capo de Guitarra Dunlop Ultimate Capo",
-    precio: 69000,
-    imagenes: ["resources/images/productos/Instrumentos/capo.jpg"],
-    descripcion: "El Dunlop Ultimate Capo es un capo versátil y fácil de usar que se adapta a una amplia gama de guitarras. Perfecto para guitarristas que necesitan cambiar rápidamente de tono."
-  },
-  {
-    id: 45,
-    Codigo:"ACC024",
-    clase:"accesorios",
-    color:"Negro",
-    nombre: "Afinador de Guitarra Planet Waves NS Clip-On",
-    precio: 34000,
-    imagenes: ["resources/images/productos/Instrumentos/afinador.jpg"],
-    descripcion: "El Planet Waves NS Clip-On es un afinador de guitarra preciso y fácil de usar que se engancha en el clavijero de tu guitarra. Perfecto para guitarristas que necesitan afinar su guitarra rápidamente y en silencio."
-  },
-  {
-    id: 46,
-    Codigo:"ACC025",
-    clase:"accesorios",
-    color:"Blanco",
-    nombre: "Metrónomo Digital Korg TM-60",
-    precio: 49000,
-    imagenes: ["resources/images/productos/Instrumentos/metronomo.jpg"],
-    descripcion: "El Korg TM-60 es un metrónomo digital preciso y versátil que ofrece una amplia gama de funciones y ritmos. Perfecto para músicos que necesitan practicar con un ritmo constante."
-  },
-  {
-    id: 47,
-    Codigo:"ACC026",
-    clase:"accesorios",
-    color:"Negro",
-    nombre: "Pedalera Multiefectos Boss GT-100",
-    precio: 1249000,
-    imagenes: ["resources/images/productos/Instrumentos/pedalera.webp"],
-    descripcion: "El Boss GT-100 es una pedalera multiefectos que ofrece una amplia gama de efectos y sonidos. Perfecto para guitarristas que buscan experimentar con diferentes sonidos."
-  },
-  {
-    id: 48,
-    Codigo:"SON004",
-    clase:"sonido",
-    color:"Azul",
-    nombre: "Interface de Audio PreSonus AudioBox USB 96",
-    precio: 449000,
-    imagenes: ["resources/images/productos/Instrumentos/interface.jpg"],
-    descripcion: "La PreSonus AudioBox USB 96 es una interfaz de audio de alta calidad que permite grabar y reproducir audio en un ordenador. Perfecta para músicos que quieren crear música en casa."
-  },
-  {
-    id: 49,
-    Codigo:"SON005",
-    clase:"sonido",
-    color:"Negro",
-    nombre: "Interface de Audio",
-    precio: 300000,
-    imagenes: ["resources/images/productos/Instrumentos/inter.jpg"],
-    descripcion: " una interfaz de audio de alta calidad que permite grabar y reproducir audio en un ordenador."
-  },
-    
+  
 ];
 
 
@@ -572,12 +482,14 @@ const productosPorPagina = 15;
     productosContainer.innerHTML = '';
 
     productosPagina.forEach(producto => {
-      const productoElement = document.createElement('div');
-      productoElement.classList.add('producto');
-
       const imagenElement = document.createElement('img');
       imagenElement.src = producto.imagenes[0];
       imagenElement.alt = producto.nombre;
+
+      const productoElement = document.createElement('div');
+      productoElement.classList.add('producto');
+
+     
 
       const nombreElement = document.createElement('h3');
       nombreElement.textContent = producto.nombre;
@@ -592,9 +504,10 @@ const productosPorPagina = 15;
       colorElement.textContent = 'Color: '+producto.color;
 
       const agregarButton = document.createElement('button');
-      agregarButton.textContent = 'Agregar al Carrito';
+      agregarButton.textContent = 'COMPRAR';
       agregarButton.addEventListener('click', () => {
         agregarAlCarrito(producto);
+        alert("Se ha añadido el producto al carrito");
       });
 
       productoElement.appendChild(imagenElement);
@@ -697,13 +610,318 @@ errorCount++;
     mostrarPagina(paginaActual);
     mostrarPaginacion();
     nuevoProductoForm.reset();
-    alert("Se agrego el producto mi papacho :D");
+    alert("Se agrego el producto correctamente");
 }
-else{
-  alert("Se redigira a la pagina de instrucciones para que entienda mejor el funcionamiento de la pagina");
-  window.location.href = "instrucciones.html";}
+
 
   });
-                        
+     function mostrarProductos(productos) {
+        const tbody = document.querySelector('#tabla-productos tbody');
+        tbody.innerHTML = '';
+        productos.forEach(producto => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${producto.nombre}</td>
+                <td>${producto.precio}</td>
+                <td><img src="${producto.imagenes[0]}" alt="${producto.nombre}" width="100"></td>
+                <td>${producto.descripcion}</td>
+                <td><button class="agregar-carrito-btn">Agregar al Carrito</button></td>
+            `;
+            
+            const agregarButton = row.querySelector('.agregar-carrito-btn');
+            agregarButton.addEventListener('click', () => {
+                agregarAlCarrito(producto);
+            });
+            
+            tbody.appendChild(row);
+    });
+}
+
+
+function mostrarProductosConFiltro(productos) {
+    const tbody = document.querySelector('#tabla-productos tbody');
+    tbody.innerHTML = '';
+    productos.forEach(producto => {
+        if (producto.clase === 'instrumento') {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td><img src="${producto.imagenes[0]}" alt="${producto.nombre}" width="100"></td>
+            <td>${producto.descripcion}</td>
+            <td><button class="agregar-carrito-btn">Agregar al Carrito</button></td>
+            `;
+            
+        const agregarButton = row.querySelector('.agregar-carrito-btn');
+        agregarButton.addEventListener('click', () => {
+            agregarAlCarrito(producto);
+        });
+            tbody.appendChild(row);
+        }
+    });
+}
+function mostrarProductosConFiltroAmp(productos) {
+  const tbody = document.querySelector('#tabla-productos tbody');
+    tbody.innerHTML = '';
+    productos.forEach(producto => {
+        if (producto.clase === 'amplificador') {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td><img src="${producto.imagenes[0]}" alt="${producto.nombre}" width="100"></td>
+            <td>${producto.descripcion}</td>
+            <td><button class="agregar-carrito-btn">Agregar al Carrito</button></td>
+            `;
+            
+        const agregarButton = row.querySelector('.agregar-carrito-btn');
+        agregarButton.addEventListener('click', () => {
+            agregarAlCarrito(producto);
+        });
+            tbody.appendChild(row);
+        }
+    });
+}
+function mostrarProductosConFiltroAcc(productos) {
+  const tbody = document.querySelector('#tabla-productos tbody');
+    tbody.innerHTML = '';
+    productos.forEach(producto => {
+        if (producto.clase === 'accesorios') {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td><img src="${producto.imagenes[0]}" alt="${producto.nombre}" width="100"></td>
+            <td>${producto.descripcion}</td>
+            <td><button class="agregar-carrito-btn">Agregar al Carrito</button></td>
+            `;
+            
+        const agregarButton = row.querySelector('.agregar-carrito-btn');
+        agregarButton.addEventListener('click', () => {
+            agregarAlCarrito(producto);
+        });
+            tbody.appendChild(row);
+        }
+    });
+}
+function mostrarProductosConFiltroSond(productos) {
+  const tbody = document.querySelector('#tabla-productos tbody');
+    tbody.innerHTML = '';
+    productos.forEach(producto => {
+        if (producto.clase === 'sonido') {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td><img src="${producto.imagenes[0]}" alt="${producto.nombre}" width="100"></td>
+            <td>${producto.descripcion}</td>
+            <td><button class="agregar-carrito-btn">Agregar al Carrito</button></td>
+            `;
+            
+        const agregarButton = row.querySelector('.agregar-carrito-btn');
+        agregarButton.addEventListener('click', () => {
+            agregarAlCarrito(producto);
+        });
+            tbody.appendChild(row);
+        }
+    });
+}
+function mostrarProductosConFiltroSoft(productos) {
+  const tbody = document.querySelector('#tabla-productos tbody');
+    tbody.innerHTML = '';
+    productos.forEach(producto => {
+        if (producto.clase === 'software') {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td><img src="${producto.imagenes[0]}" alt="${producto.nombre}" width="100"></td>
+            <td>${producto.descripcion}</td>
+            <td><button class="agregar-carrito-btn">Agregar al Carrito</button></td>
+            `;
+            
+        const agregarButton = row.querySelector('.agregar-carrito-btn');
+        agregarButton.addEventListener('click', () => {
+            agregarAlCarrito(producto);
+        });
+            tbody.appendChild(row);
+        }
+    });
+}
+function mostrarProductosConFiltroMic(productos) {
+  const tbody = document.querySelector('#tabla-productos tbody');
+    tbody.innerHTML = '';
+    productos.forEach(producto => {
+        if (producto.clase === 'microfonos') {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td><img src="${producto.imagenes[0]}" alt="${producto.nombre}" width="100"></td>
+            <td>${producto.descripcion}</td>
+            <td><button class="agregar-carrito-btn">Agregar al Carrito</button></td>
+            `;
+            
+        const agregarButton = row.querySelector('.agregar-carrito-btn');
+        agregarButton.addEventListener('click', () => {
+            agregarAlCarrito(producto);
+        });
+            tbody.appendChild(row);
+        }
+    });
+}
+function mostrarProductosConFiltroTeo(productos) {
+  const tbody = document.querySelector('#tabla-productos tbody');
+    tbody.innerHTML = '';
+    productos.forEach(producto => {
+        if (producto.clase === 'teoria') {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td><img src="${producto.imagenes[0]}" alt="${producto.nombre}" width="100"></td>
+            <td>${producto.descripcion}</td>
+            <td><button class="agregar-carrito-btn">Agregar al Carrito</button></td>
+            `;
+            
+        const agregarButton = row.querySelector('.agregar-carrito-btn');
+        agregarButton.addEventListener('click', () => {
+            agregarAlCarrito(producto);
+        });
+            tbody.appendChild(row);
+        }
+    });
+}
+function mostrarProductosConFiltroRep(productos) {
+  const tbody = document.querySelector('#tabla-productos tbody');
+    tbody.innerHTML = '';
+    productos.forEach(producto => {
+        if (producto.clase === 'repuestos') {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td><img src="${producto.imagenes[0]}" alt="${producto.nombre}" width="100"></td>
+            <td>${producto.descripcion}</td>
+            <td><button class="agregar-carrito-btn">Agregar al Carrito</button></td>
+            `;
+            
+        const agregarButton = row.querySelector('.agregar-carrito-btn');
+        agregarButton.addEventListener('click', () => {
+            agregarAlCarrito(producto);
+        });
+            tbody.appendChild(row);
+        }
+    });
+}
+function mostrarTodosProductos() {
+    mostrarProductos(productos);
+}
+
+function mostrarIns(){
+  mostrarProductosConFiltro(productos);
+}
+function mostraramp(){
+  mostrarProductosConFiltroAmp(productos);
+}
+function mostraracc(){
+  mostrarProductosConFiltroAcc(productos);
+}
+function mostrarson(){
+  mostrarProductosConFiltroSond(productos);
+}
+function mostrarsof(){
+  mostrarProductosConFiltroSoft(productos);
+}
+function mostrarmic(){
+  mostrarProductosConFiltroMic(productos);
+}
+function mostrarteo(){
+  mostrarProductosConFiltroTeo(productos);
+}
+function mostrarrep(){
+  mostrarProductosConFiltroRep(productos);
+}
+/*
+var mostrarProductosBtn = document.getElementById('mostrarProductosBtn');
+var a = document.getElementById('a');
+var b = document.getElementById('b');
+var c = document.getElementById('c');
+var d = document.getElementById('d');
+var e = document.getElementById('e');
+var f = document.getElementById('f');
+var g = document.getElementById('g');
+var h = document.getElementById('h');
+*/
+  const selectElement = document.getElementById('miSelect');
+  const button = document.getElementById('ejecutarOpcion');
+
+  button.addEventListener('click', () => {
+      const selectedValue = selectElement.value;
+      ejecutarFuncion(selectedValue);
+  });
+
+
+function ejecutarFuncion(opcion) {
+  switch (opcion) {
+      case 'opcion1':
+          mostrarTodosProductos();
+          break;
+      case 'opcion2':
+        mostrarIns();
+          break;
+      case 'opcion3':
+          mostraramp();
+          break;
+          case 'opcion4':
+            mostraracc();
+            break;
+            case 'opcion5':
+              mostrarson();
+              break;
+              case 'opcion6':
+                mostrarsof();
+                break;
+                case 'opcion7':
+                  mostrarmic();
+                  break;
+                  case 'opcion8':
+                    mostrarteo();
+                    break;
+                    case 'opcion9':
+                      mostrarrep();
+                      break;
+      default:
+          
+  }
+}
+
+/*
+
+// Agregar un evento de click al botón
+mostrarProductosBtn.addEventListener('click', function() {
+    mostrarTodosProductos();})
+   var awa = document.getElementById('awa');
+    awa.addEventListener('change', function() {
+      mostrarIns();
+    });
+    a.addEventListener('click', function() {
+      mostrarIns();})
+      b.addEventListener('click', function() {
+        mostraramp();})
+        c.addEventListener('click', function() {
+          mostraracc();})
+          d.addEventListener('click', function() {
+            mostrarson();})
+            e.addEventListener('click', function() {
+              mostrarsof();})
+              f.addEventListener('click', function() {
+                mostrarmic();})
+                g.addEventListener('click', function() {
+                  mostrarteo();})
+                  h.addEventListener('click', function() {
+                    mostrarrep();})
+               */
+                    
 });
 
